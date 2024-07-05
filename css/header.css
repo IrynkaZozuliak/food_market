@@ -1,20 +1,40 @@
 
-.header_image {
-    background: #fbf4f0;;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    overflow-x: hidden;
-    
-    }
-    
+ 
     .position_header_blok {
-      margin-top: 20px;
       margin-bottom: 25px;
-      
+    }
+
+    .orange_block_header {
+      background: #fbf4f0;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      overflow-x: hidden;
+      }
+
+
+
+
+.social_icons_poss ul li {
+  display: flex;
+  flex-direction: row;
+ 
+    gap: 15px;
+    list-style-type: none;
+   
+  }
+
+  .social_icons_poss ul li a {
+    display: flex;
+   
+      gap: 15px;
+      list-style-type: none;
+      color: #a9a9a9;
+      width:27px;
     }
 
 
@@ -23,6 +43,9 @@
       display: flex;
       flex-direction: row;
       gap: 15px;
+      
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
 
     .text_phone_locat_posit {
@@ -32,25 +55,23 @@
     }
 
     .pp_head_orange {
-      color: #f69946;
-      line-height: normal;
       font-size: 14px;
       font-family: "Istok Web", sans-serif;
       font-weight: 600;
       font-style: normal;
-      text-decoration: none;
-      text-transform: none;
+      color: #f69946;
+      line-height: 1.6;
+      letter-spacing: 0.05px;
     }
 
     .pp_head_gray {
       color: #858585;
-      line-height: normal;
+      line-height: 1.6;
       font-size: 14px;
       font-family: "Istok Web", sans-serif;
-      font-weight: 500;
+      font-weight: 400;
       font-style: normal;
-      text-decoration: none;
-      text-transform: none;
+      
     }
 
 
