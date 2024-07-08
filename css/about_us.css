@@ -13,3 +13,50 @@
     margin-top: 250px;
     margin-bottom: 250px;
 }
+
+.hjhj {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.text_aboutUss {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-right: 15px;
+    width: 680px;
+}
+
+.white_text_block {
+    width: 550px;
+}
+
+.pp_text_abouts {
+    font-size: 14px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f69946;
+    line-height: 1.3;
+}
+
+.hh1_aboutUs_text_one {
+    font-size: 72px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #a9c623;
+    line-height: 1.1;  
+}
+
+.hh1_aboutUs_text_two {
+    font-size: 72px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #242424;
+    line-height: 1.1;
+}
