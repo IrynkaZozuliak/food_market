@@ -1,0 +1,15 @@
+.foodMarker_block_aboutUs {
+    background: url(/img/aboutUs_back.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+    }
+
+.foodMarket_aboutUs {
+    margin-top: 250px;
+    margin-bottom: 250px;
+}

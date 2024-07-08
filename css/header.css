@@ -134,7 +134,7 @@
     .nav__menu-link {
         position: relative;
         max-width: 100%;
-        color: rgb(164, 157, 152);
+        color: #333333;
         line-height: normal;
         font-size: 15px;
         font-family: "AR One sans", sans-serif;
