@@ -11,26 +11,24 @@
       flex-direction: row;
       justify-content:space-around;
       align-items: center;
-      gap: 30px;
-      margin-left: 90px;
-      margin-right: 90px;
+      gap: 250px;
+      margin-left: 7px;
+      margin-right: 10px;
+      
       margin-top: 15px;
       margin-bottom: 15px;
-      border: solid;
       }
 
     .phone_location_position {
       display: flex;
       flex-direction: row;
       gap: 15px;
-      border: solid;
     }
 
     .text_phone_locat_posit {
       display: flex;
       flex-direction: row;
       gap: 5px;
-      border: solid;
     }
 
     .pp_head_orange {
@@ -60,7 +58,6 @@
     
       gap: 15px;
       list-style-type: none;
-      border: solid;
       }
 
     .icons_positions_block ul li  {
@@ -72,20 +69,19 @@
 
     .image_header_logo {
         width: 170px;
-        border: solid;
     }
     
     
     .menu_link {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items: center;
-        margin-left: 90px;
-        margin-right: 90px;  
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      align-items: center;
+      gap: 25px;
+      margin-left: 7px;
+      margin-right: 10px; 
         margin-top: 25px;
         margin-bottom: 25px;
-        border: solid;
     }
     
     
@@ -126,7 +122,6 @@
         align-items: center;
         gap: 15px;
         list-style-type: none;
-        border: solid;
       }
     
       @media only screen and (min-width:320px) and (max-width:477px)  {

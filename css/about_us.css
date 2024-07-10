@@ -17,8 +17,8 @@
 .hjhj {
     display: flex;
     flex-direction: row;
-    gap: 30px;
     justify-content: center;
+    margin-left: 90px;
 }
 
 .text_aboutUss {
