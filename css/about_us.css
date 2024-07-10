@@ -60,3 +60,63 @@
     color: #242424;
     line-height: 1.1;
 }
+
+
+
+
+
+
+
+.buttom_about_position {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 90px;
+
+}
+
+
+
+.buttom_aboutUs button[type="submit"] {
+    display: inline-block;
+   
+    font-size: 13px;
+    background: #a9c623;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0.75rem 1.55rem;
+    transition: background 0.25s, color 0.25s;
+  }
+  
+  .buttom_aboutUs button[type="submit"]:hover {
+    color: #fff;
+    background: rgb(148, 175, 22);
+  }
+
+  .button_container_one { 
+    width: 170px;
+    height: 50px;
+    border: none;
+    padding: 13px 34px;
+    background-color: #a9c623;
+    text-align: center;
+    text-decoration: none;
+   
+    font-optical-sizing: auto;
+    font-weight: 700;
+  
+    border-radius: 5px;
+    border-width: 5px;
+  }
+
+
+  .buttom_text_color_aboutUs {
+    border: solid;
+    text-align: center;
+
+    
+  }
+
+
+
