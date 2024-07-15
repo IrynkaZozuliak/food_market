@@ -96,12 +96,11 @@
   }
 
   .button_container_one { 
-    width: 270px;
-    height: 58px;
+    width: 170px;
+    height: 60px;
     border: none;
-    padding: 13px 34px;
     background-color: #a9c623;
-    text-align: center;
+    
     text-decoration: none;
    
     font-optical-sizing: auto;
@@ -112,18 +111,23 @@
   }
 
 
+  
+  .button__inner_2of {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+}
 
+.button__icon_286 {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-  .ghgj {
-    border: solid ;
-    text-align: start;
-   
-  }
-
-  .vghjjj{
-display: inline-block;
-
-  }
-
-
-
+.button__icon--right_1Bt {
+    right: 0;
+}
