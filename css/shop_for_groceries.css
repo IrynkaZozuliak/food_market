@@ -80,7 +80,7 @@
 
 .buttom_forGroceries button[type="submit"] {
     display: inline-block;
-   
+
     font-size: 13px;
     background: #a9c623;
     color: #ffffff;
@@ -100,23 +100,27 @@
     height: 60px;
     border: none;
     background-color: #a9c623;
-    
     text-decoration: none;
-   
+ 
     font-optical-sizing: auto;
     font-weight: 700;
   
     border-radius: 5px;
     border-width: 5px;
+   
   }
 
 
   
   .button__inner_2of {
     display: flex;
+    flex-direction: row;
+    gap: 25px;
     position: relative;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    border: solid;
+
 }
 
 .button__icon_286 {
@@ -131,3 +135,4 @@
 .button__icon--right_1Bt {
     right: 0;
 }
+
