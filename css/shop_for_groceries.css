@@ -103,7 +103,7 @@
     border-color: #a9c623;
    border-width: 5px;
     color: #f69946;
-    border: 1px solid transparent;
+    border: 1px solid ;
     cursor: pointer;
     padding: 0.75rem 1.55rem;
     transition: background 0.25s, color 0.25s;
@@ -133,7 +133,7 @@
     width: 180px;
     height: 60px;
    
- 
+ border: #a9c623;
     font-optical-sizing: auto;
     font-weight: 700;
     border-bottom-width: 15px;
