@@ -70,15 +70,15 @@
 .buttom_forGroceries_position {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 380px;
+    justify-content: center;
+    gap: 20px;
     margin-top: 50px;
 
 }
 
 
 
-.buttom_forGroceries button[type="submit"] {
+.buttom_forGroceries_one button[type="submit"] {
     display: inline-block;
 
     font-size: 13px;
@@ -90,10 +90,30 @@
     transition: background 0.25s, color 0.25s;
   }
   
-  .buttom_forGroceries button[type="submit"]:hover {
+  .buttom_forGroceries_one button[type="submit"]:hover {
     color: #fff;
     background: rgb(148, 175, 22);
   }
+
+  .buttom_forGroceries_two button[type="submit"] {
+    display: inline-block;
+
+    font-size: 13px;
+    border-style: solid;
+    border-color: #a9c623;
+   border-width: 5px;
+    color: #f69946;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0.75rem 1.55rem;
+    transition: background 0.25s, color 0.25s;
+  }
+  
+  .buttom_forGroceries_two button[type="submit"]:hover {
+    color: #fff;
+    background: rgb(148, 175, 22);
+  }
+
 
   .button_container_one { 
     width: 170px;
@@ -107,20 +127,32 @@
   
     border-radius: 5px;
     border-width: 5px;
+  }
+
+  .button_container_two { 
+    width: 180px;
+    height: 60px;
+   
+ 
+    font-optical-sizing: auto;
+    font-weight: 700;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+   border-bottom-color: #a9c623;
+    border-radius: 50px;
    
   }
 
-
   
-  .button__inner_2of {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+  .button__inner_2of { 
+    text-align: start;
     position: relative;
     justify-content: center;
     align-items: center;
-    border: solid;
+     
 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .button__icon_286 {
