@@ -1,0 +1,32 @@
+.image_fruit_block {
+   
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  .image__fruit_block_position {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .elements_position_fruit_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .oneElement_fruit_block {
+border: solid;
+border-color: black;
+  }
+
+
+  .image_fruit_all {
+    width: 150px;
+  }
