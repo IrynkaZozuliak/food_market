@@ -1,15 +1,46 @@
-.forGroceries_block_down {
-    background: url(/img/background/forGro_down.webp);
-    background-size: cover;
-    background-position: center;
+ 
+  .aboutUs_block_position {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
     display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    overflow-x: hidden;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
   }
-  
-  .forGroceries_posit_down {
-    margin-top: 40px;
-    margin-bottom: 45px;
+
+
+  .image_aboutUss {
+    width: 585px;
+    border: solid;
+  }
+
+  .all_text_aboutUss_size {
+    width: 585px;
+    border: solid;
+    
+  }
+
+
+  .green_image_text_position {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .imagen_green_elem {
+    width: 20px;
+    color: #a9c623;;
+  }
+
+  .green_text_size {
+     
+        color: #333333;
+        line-height: 1.5;
+        font-size: 16px;
+        font-family: "AR One sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
   }
