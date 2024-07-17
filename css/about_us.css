@@ -18,6 +18,13 @@
   .all_text_aboutUss_size {
     width: 585px;
     border: solid;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-top: 20px;
+    padding-left: 5px;
     
   }
 
@@ -33,13 +40,44 @@
     color: #a9c623;;
   }
 
+
+.pp_aboutUss_text {
+  font-size: 14px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f69946;
+  line-height: 1.3;  
+}
+
+.hh2_fresh_Produce {
+  font-size: 42px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #2c2c2c;
+  line-height: 1.2; 
+}
+
+.hh3_shopForGroceries {
+  font-size: 18px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #2c2c2c;
+  line-height: 1.56; 
+}
+
+
+
   .green_text_size {
      
-        color: #333333;
+        color: #707070;
         line-height: 1.5;
+        letter-spacing: 0.05px;
         font-size: 16px;
         font-family: "AR One sans", sans-serif;
-        font-weight: 600;
+        font-weight: 300;
         font-style: normal;
         text-decoration: none;
         text-transform: none;
