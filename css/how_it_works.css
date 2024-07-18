@@ -1,0 +1,45 @@
+ 
+.howItWorks_block_position {
+    margin-top: 115px;
+    margin-bottom: 50px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+.pp_hh23_elem_position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 190px;
+    padding-right: 190px;
+    border: solid;
+}
+.pp_howItWorks_text {
+    font-size: 14px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f69946;
+    line-height: 1.3;  
+  }
+  
+  .hh2_dontWorry_text {
+    font-size: 42px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2c2c2c;
+    line-height: 1.2; 
+  }
+  
+  .hh3_weWorkWith_text {
+    font-size: 18px;
+    font-family: "AR One sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #2c2c2c;
+    line-height: 1.56;
+    text-align: center; 
+  }

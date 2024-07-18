@@ -1,7 +1,7 @@
  
   .aboutUs_block_position {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 
     display: flex;
     flex-direction: row;
@@ -29,6 +29,12 @@
     
   }
 
+  .green_text_icon_elements {
+    display: flex;
+    flex-direction: row;flex-wrap: wrap;
+    gap: 20px;
+    padding-right: 25px;
+  }
 
   .green_image_text_position {
     display: flex;
@@ -61,7 +67,7 @@
 }
 
 .hh3_shopForGroceries {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "AR One sans", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -79,6 +85,9 @@
         padding-right: 55px;
 }
 
+
+
+
   .green_text_size {
      
         color: #707070;
@@ -91,3 +100,62 @@
         text-decoration: none;
         text-transform: none;
   }
+
+
+
+
+
+
+
+
+
+  .buttom_aboutUss button[type="submit"] {
+    display: inline-block;
+    background-color: #f69946;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0.75rem 1.55rem;
+    transition: background 0.25s, color 0.25s;
+  }
+  
+  .buttom_aboutUss button[type="submit"]:hover {
+    color: #fff;
+    background: rgb(221, 124, 38);
+  }
+
+
+  .button_container_aboutUss { 
+    width: 165px;
+    height: 60px;
+   
+    font-optical-sizing: auto;
+    font-weight: 700;
+  }
+
+   
+
+  .button__inner_2of { 
+    text-align: start;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button__icon_286 {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button__icon--right_1Bt {
+    right: 0;
+}
