@@ -16,8 +16,8 @@
     padding-left: 190px;
     padding-right: 190px;
     padding-bottom: 50px;
-    border: solid;
 }
+
 .pp_freshDeals_text {
     font-size: 16px;
     font-family: "Istok Web", sans-serif;
@@ -64,6 +64,7 @@
   .tab {
     order: 1;
   }
+
   
   .tab-panel {
     display: none;
@@ -100,7 +101,7 @@
 
     font-size: 14px;
     font-family: "Istok Web", sans-serif;
-    color: #707070;
+    color: #858585
     
   }
   
@@ -113,6 +114,15 @@
     font-family: "Istok Web", sans-serif;
     color: #333333;
      
+  }
+
+
+  .hrhrhr {
+    width: 1190px;
+    margin-top: -12px;
+    margin-bottom: 25px;
+    margin-left: 165px;
+   
   }
   
   @media screen and (max-width: 480px) {
@@ -160,7 +170,6 @@
         align-items: center;
         gap: 20px;
         
-        border: solid;
     }
 
     .fotoelement_freshDeals {
