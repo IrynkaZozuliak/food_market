@@ -124,27 +124,21 @@
 
 
 .content_text {
-   
     width: 270px;
     background-color: #fbf4f0;
-    
-
-    
-    
     }
-
 
     .ghghgh {
-         padding-top: 35px;
-         padding-bottom: 50px;
-         
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap: 20px;
-         
-         border: solid;
-    }
+        padding-top: 35px;
+        padding-bottom: 50px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+        border: solid;
+   }
 
 .fotoelement_freshDeals {
     width: 200px;
@@ -167,22 +161,21 @@
     color: #a9c623;
     line-height: 1.4;
     text-decoration: none;
-
-    
 }
 
 
-
-    
+ 
 .buttom_personal_readings button[type="submit"] {
     display: inline-block;
     background: none;
     border: 2px solid #a9c623;
     color: #f69946;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
     cursor: pointer;
-    padding: 0.75rem 1.55rem;
+    padding: 0.55rem 1.05rem;
     transition: background 0.25s, color 0.25s;
   }
   
@@ -192,8 +185,8 @@
   }
 
   .button__personal_container { 
-    width: 90px;
-    height: 35px;
+    width: 100px;
+    height: 45px;
     border: none;
     background-color: #2ab6ff;
     text-align: center;
@@ -202,7 +195,7 @@
    
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+   
     border-radius: 5px;
     border-width: 5px;
   }
