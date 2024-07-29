@@ -117,12 +117,18 @@
   }
 
 
+  .hrhrhr_position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .hrhrhr {
     width: 1190px;
     margin-top: -12px;
-    margin-bottom: 25px;
-    margin-left: 165px;
+    margin-bottom: 25px;  
   }
+  
   
   @media screen and (max-width: 480px) {
     .tabs {
