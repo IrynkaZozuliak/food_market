@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 18px;
   }
 
 
@@ -28,7 +27,6 @@
     gap: 20px;
     padding-left: 190px;
     padding-right: 190px;
-    padding-bottom: 50px;
 }
 
 .pp_topPics_text {
@@ -61,5 +59,86 @@
     padding-left: 125px;
     padding-right: 125px;
   }
+
+
+
+
+
+
+  .content_text_topPicks {
+    width: 275px;
+    background-color: #fbf4f0;
+}
+
+.content_position_topPicks {
+    padding-top: 35px;
+    padding-bottom: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.fotoelement_topPicks {
+    width: 200px;
+}
+
+.hh3_topPicks_text {
+    font-size: 18px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+    line-height: 1.4;
+}
+
+.pp_price_topPicks {
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #a9c623;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+
+
+.buttom_topPicks button[type="submit"] {
+    display: inline-block;
+    background: none;
+    border: 2px solid #a9c623;
+    color: #f69946;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    padding: 0.55rem 1.05rem;
+    transition: background 0.25s, color 0.25s;
+}
+
+.buttom_topPicks button[type="submit"]:hover {
+    color: #fff;
+    background: #a9c623;
+}
+
+.button__personal_container { 
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: #2ab6ff;
+    text-align: center;
+    text-decoration: none;  
+    color: #322c2c;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    border-radius: 5px;
+    border-width: 5px;
+}
 
 

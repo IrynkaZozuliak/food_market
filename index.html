@@ -28,6 +28,27 @@
 
     <!-- туту посилання на іконки фейсбук,інстаграм, ютуб-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- тут для слайдера в блок  top pics лінк та стилі-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style type="text/css">
+        .img_box img {
+            max-width: 100%;
+        }
+
+        .slider_container .container{
+            padding: 0 15px;
+            max-width: 1220px;
+            margin: 0 auto;
+        }
+
+        .card_slider{
+            padding: 50px 0;
+        }
+
+        .colorit {
+            color: gray;
+        }
+    </style>
 </head>
 <body>
     
@@ -768,26 +789,155 @@
                 </div>
             </div>
 
-            <div>
-                <div class="content_text_freshDeals">
-                    <div class="content_position_freshDeals">
-                        <img src="img/freshDeals/a_freshFigs.png" class="fotoelement_freshDeals">
-
-                        <h3 class="hh3_freshFigs_text">Fresh Figs</h3>
-                        <p class="pp_price_fresh_text">5,00USD</p>
-
-                        <div class="buttom_personal_readings">
-                            <form name="form-btn_personal_readings" >
-                                <button class="button__personal_container" type="submit">Buy Now</button>
-                            </form> 
-                        </div> 
-                    </div>   
+            <section class="slider_container">
+                <div class="container">
+                    <div class="swiper card_slider">
+                        <div class="swiper-wrapper">
+        
+                            <div class="swiper-slide content_text_topPicks">
+                                <div class="img_box content_position_topPicks">
+                                    <img src="img/some/topPikcs_1.png" class="fotoelement_topPicks">
+        
+                                    <h3 class="hh3_topPicks_text">Granny Smith Apples</h3>
+                                    <p class="pp_price_topPicks">2,00USD</p>
+        
+                                    <div class="buttom_topPicks">
+                                        <form name="form-btn_topPicks" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_2.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Strawberries</h3>
+                                    <p class="pp_price_fresh_text">8,00USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_3.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Blackberries</h3>
+                                    <p class="pp_price_fresh_text">4,00USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_4.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Mango</h3>
+                                    <p class="pp_price_fresh_text">2,50USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_5.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Organic Lemons</h3>
+                                    <p class="pp_price_fresh_text">1,33USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                        </div>
+                        
+                        <div class="swiper-button-next colorit"></div>
+                        <div class="swiper-button-prev colorit"></div>
+                        <div class="swiper-pagination" style="--swiper-pagination-color: #a9c623;"></div>
+                    </div>
+        
                 </div>
-            </div>
+            </section>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script type="text/javascript">
+                var swiper = new Swiper(".card_slider", {
+                    slidesPerView: 4, 
+                    spaceBetween: 30, 
+                    loop: true,
+                    speed: 500,
+                    pagination: {
+                        el: ".swiper-pagination", 
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        480: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                        },
+                    },
+                });
+            </script>
+           
+        </div>
+    </section>
 
 
+    <section class="timeDays_background_all">
+        <div class="timeDays_block_position">
+
+            <section class="timeCode_background_bestDeals">
+                <div class="marrggg">
+                    <div class="pp_hh23_elem_position_timeDays">
+                        <p class="pp_timeDays_text">25% off</p>
+                        <h2 class="hh2_timeDays_text">Best Deals of the Week</h2>
+                        <h3 class="hh3_timeDays_text">Take advantage of our limited-time offer and get a 25% discount on any items with our unique promo code!  </h3>
+                    </div>
+
+                    <div>
+
+                    </div>
 
 
+                    <div class="hh3_useCode_Fresh_position">
+                        <h3 class="hh3_textcolor_usecodeTime_one">Use code:</h3>>
+                        <h3 class="hh3_textcolor_usecodeTime_two">Fresh Food</h3>
+                    </div>
+                </div>
+               
+
+            </section>
         </div>
     </section>
 
