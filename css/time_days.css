@@ -171,3 +171,28 @@
   
 }
 
+
+
+
+
+
+
+
+
+
+.orangeSmall_background_all {
+  background: url(/img/background/background_orangeSmall.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  overflow-x: hidden;
+  }
+
+.orangeSmall_block_position {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+

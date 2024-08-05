@@ -1,0 +1,15 @@
+.ourApp_background_all {
+    background-color: #fbf4f0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+    }
+  
+  .ourApp_block_position {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
