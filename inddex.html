@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Market Website</title>
+    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- шрифт 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!-- шрифт 2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+
+
+ <!-- шрифт 3 Source Sans 3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- туту посилання на іконки фейсбук,інстаграм, ютуб-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- тут для слайдера в блок  top pics лінк та стилі-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style type="text/css">
+        .img_box img {
+            max-width: 100%;
+        }
+
+        .slider_container .container{
+            padding: 0 15px;
+            max-width: 1220px;
+            margin: 0 auto;
+        }
+
+        .card_slider{
+            padding: 50px 0;
+        }
+
+        .colorit {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    
+
+
+
+    <header class="header_image">
+        <div class="position_header_blok">
+
+
+            <div class="orange_block_header">
+                <div class="elements_orange_block_position">
+             
+                    <div class="phone_location_position">
+                        <div class="text_phone_locat_posit">
+                            <p  class="pp_head_orange">Phone:</p>
+                            <p  class="pp_head_gray"> +1 (234) 567 89 00</p>
+                        </div>
+                        <div class="text_phone_locat_posit">
+                            <p  class="pp_head_orange">Location:</p>
+                            <p  class="pp_head_gray">1010 3rd Ave, New York</p>
+                        </div>
+                    </div>
+
+
+                    <div class="icons_positions_block">
+                        <style>.si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444 .logo_2gS {fill: rgb(140, 131, 125)}</style>
+                        <style>.si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444:hover .logo_2gS {fill: rgb(107, 106, 106)}</style>
+                        <ul>
+                            <li>
+                                <a style="width:27px;height:27px;color:rgb(164, 157, 152)" rel="noopener noreferrer" target="_blank" href="https://facebook.com/" class="social-icons__icon_3m8">
+                                    <svg class="si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444 svgIcon_1J7" viewBox="0 0 32 32">
+                                        <path class="logo_2gS" d="M13.6383 25H16.9133V16.0044H19.3702L19.8561 13.1936H16.9133V11.1568C16.9133 10.5002 17.3379 9.8108 17.9447 9.8108H19.6171V7H17.5674V7.0126C14.3604 7.129 13.7014 8.9864 13.6443 10.9374H13.6383V13.1936H12V16.0044H13.6383V25Z"></path>
+                                    </svg>
+                                    <span style="display:none">a87f3845-91bb-4d32-8b2f-48ecfd20ce9c</span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a style="width:27px;height:27px;color:rgb(164, 157, 152)" rel="noopener noreferrer" target="_blank" href="https://twitter.com/" class="social-icons__icon_3m8">
+                                    <svg class="si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444 svgIcon_1J7" viewBox="0 0 32 32">
+                                        <path class="logo_2gS" d="M23.5445333,10.2885333 C23.0796444,10.5863111 22.0122666,11.0190222 21.4858666,11.0190222 L21.4858666,11.0199111 C20.8848,10.392 20.0385777,10 19.1000888,10 C17.2773333,10 15.7992889,11.4780444 15.7992889,13.3000888 C15.7992889,13.5532445 15.8286222,13.8001778 15.8828444,14.0369778 L15.8823111,14.0369778 C13.4097777,13.9720888 10.7056,12.7328 9.07768889,10.6117333 C8.0768,12.3441778 8.94293333,14.2709334 10.0787556,14.9729778 C9.68995555,15.0023111 8.97422222,14.9281778 8.63733333,14.5994666 C8.61475555,15.7493334 9.16764444,17.2728889 11.1836444,17.8256 C10.7953778,18.0344889 10.1080889,17.9745778 9.80924444,17.9301333 C9.91413329,18.9008 11.2734222,20.1697778 12.7598222,20.1697778 C12.2300445,20.7825777 10.2368,21.8940444 8,21.5404445 C9.51911111,22.4647111 11.2896,22.9999999 13.1635555,22.9999999 C18.4888889,22.9999999 22.6245334,18.6840889 22.4019555,13.3598222 C22.4010666,13.3539556 22.4010666,13.3480889 22.4005334,13.3416889 C22.4010666,13.328 22.4019555,13.3143111 22.4019555,13.3000888 C22.4019555,13.2835556 22.4005334,13.2679111 22.4,13.2519111 C22.8847999,12.9203555 23.5352888,12.3338667 24,11.5619556 C23.7304889,11.7104 22.9219555,12.0076445 22.1696,12.0814222 C22.6524444,11.8208 23.3678222,10.9672889 23.5445333,10.2885333"></path>
+                                    </svg>
+                                    <span style="display:none">49369ce9-6088-4d24-83dc-7ec1407cb111</span>
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a style="width:27px;height:27px;color:rgb(164, 157, 152)" rel="noopener noreferrer" target="_blank" href="https://youtube.com/" class="social-icons__icon_3m8">
+                                    <svg class="si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444 svgIcon_1J7" viewBox="0 0 32 32">
+                                        <path class="logo_2gS" d="M24.8319297,11.4874563 C24.6803369,10.1603684 24.3639692,9.77357894 24.1398754,9.59352174 C23.7839619,9.31343284 23.1380446,9.21340113 22.2746246,9.15338207 C20.8905163,9.06001905 18.537532,9 16,9 C13.455877,9 11.1094837,9.05335028 9.72537529,9.15338207 C8.86195533,9.21340113 8.21603808,9.31343284 7.8601245,9.59352174 C7.63603076,9.77357894 7.32625412,10.1603684 7.1680703,11.4874563 C6.94397657,13.4013973 6.94397657,17.7627818 7.1680703,19.6767227 C7.32625412,21.0038107 7.63603076,21.3906002 7.8601245,21.5706573 C8.21603808,21.8507463 8.86195533,21.950778 9.72537529,22.0107971 C11.1094837,22.1041601 13.455877,22.164179 16,22.164179 C18.544123,22.164179 20.8905163,22.1041601 22.2746246,22.0107971 C23.1380446,21.950778 23.7839619,21.8507463 24.1398754,21.5706573 C24.3639692,21.3972689 24.6737458,21.0038107 24.8319297,19.6767227 C25.0560234,17.7627818 25.0560234,13.4013973 24.8319297,11.4874563 Z M13.8249725,18.4429978 L13.8249725,12.7145125 L19.2559502,15.5754208 L13.8249725,18.4429978 Z"></path>
+                                    </svg>
+                                    <span style="display:none">729cff6a-e5bb-48fb-8aac-f0c4eed56a3e</span>
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a style="width:27px;height:27px;color:rgb(164, 157, 152)" rel="noopener noreferrer" target="_blank" href="viber://chat?number=+15551234567" class="social-icons__icon_3m8">
+                                    <svg class="si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444 svgIcon_1J7" viewBox="0 0 32 32">
+                                        <path class="logo_2gS" d="M13.9813982,8 C10.7833725,8 8.18702887,10.552157 8.18702887,13.7004613 L8.18702887,16.5541763 C8.18702887,19.0356952 9.79924077,21.1478688 12.0498345,21.9299559 L12.0498345,24 L14.0084401,22.2543208 L17.201315,22.2543208 C20.3993408,22.2543208 22.9956844,19.7024806 22.9956844,16.5541763 L22.9956844,13.7004613 C22.9956844,10.5527905 20.4012724,8 17.201315,8 L13.9813982,8 Z M17.188438,19.043931 C17.188438,19.043931 14.7865384,17.81996 13.4985073,16.5291521 C12.2111201,15.2383441 11.4063018,13.8135456 11.4063018,13.8135456 C11.1410337,13.0960781 11.1020805,12.4571677 11.6380895,11.9991289 L12.609666,11.1676269 L14.1578144,12.919958 C14.3908898,13.1841381 14.3648137,13.5826256 14.0950386,13.8135456 L13.6997119,14.1518481 C14.3557997,16.2488171 15.6106723,16.5592445 16.572591,16.8747402 L16.8008375,16.5291521 C16.9956035,16.2339292 17.3928618,16.1531548 17.6916103,16.3438459 L19.6701755,17.6080458 L18.9690178,18.6704678 C18.7227434,19.043931 18.3090669,19.2479262 17.8870202,19.2479262 C17.6471843,19.2479262 17.4044512,19.1820396 17.188438,19.043931 Z M17.4562815,14.6534101 C17.3155992,14.6534101 17.1865064,14.5621825 17.1465874,14.4224902 C17.0113779,13.950197 16.6292502,13.5735662 16.1495786,13.4392588 C15.9786352,13.3914276 15.8794816,13.2162578 15.9280926,13.0480569 C15.9767036,12.8792223 16.1547294,12.7813427 16.3259947,12.8298074 C17.0187823,13.0236661 17.5708876,13.5681812 17.7662974,14.2508048 C17.8145865,14.4193225 17.7147891,14.5941755 17.5438457,14.6416899 C17.5145503,14.649609 17.4852549,14.6534101 17.4562815,14.6534101 Z M18.7758936,14.7214824 C18.6352114,14.7214824 18.5064405,14.6302548 18.4661996,14.4905625 C18.1465258,13.3758746 17.2448074,12.4860882 16.1125891,12.1693255 C15.9416457,12.1214943 15.8424921,11.9463246 15.8911031,11.7781236 C15.9393922,11.6102394 16.11774,11.5114094 16.2886834,11.5601908 C17.6343394,11.9368217 18.7060354,12.9938588 19.0859096,14.3188771 C19.1341987,14.4870781 19.0347232,14.6622478 18.8634579,14.7097622 C18.8341625,14.7176813 18.8048671,14.7214824 18.7758936,14.7214824 Z M20.2712781,14.8581972 C20.1305959,14.8581972 20.001503,14.7669696 19.9615841,14.6272772 C19.4201023,12.7387381 17.8922354,11.2315812 15.9735487,10.6943517 C15.8029273,10.6465206 15.7037737,10.4713508 15.7520628,10.3031498 C15.8006738,10.1346321 15.9786996,10.0364356 16.1499649,10.0852171 C18.2817674,10.681998 19.979612,12.3567223 20.5812941,14.4555919 C20.6295832,14.6237928 20.5297857,14.7989626 20.3588423,14.846477 C20.3295469,14.8543961 20.3002516,14.8581972 20.2712781,14.8581972 Z"></path>
+                                    </svg>
+                                    <span style="display:none">61b77ade-6f98-42cb-83a8-e0f56b14a30d</span>
+                                </a>
+                            </li>
+            
+                            <li >
+                                <a style="width:27px;height:27px;color:rgb(164, 157, 152)" rel="noopener noreferrer" target="_blank" href="mailto:example@mail.com" class="social-icons__icon_3m8">
+                                    <svg class="si668557be2e25c562751bef9afd0a408f7121405cb9b96eb5a8edba921720014794444 svgIcon_1J7" viewBox="0 0 32 32">
+                                        <path class="logo_2gS" d="M24,10.6641564 L24,22.0000247 L8,22.0000247 L8,10.6641564 L16.0000165,17.6642286 L24,10.6641564 Z M23.240347,10 L8.75932326,10 L16.0000165,16.3359487 L23.240347,10 Z"></path>
+                                    </svg>
+                                    <span style="display:none">789098dd-bf50-47ad-ba6c-6150c7536007</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="menu_link"> 
+                <div>
+                    <img class="image_header_logo" src="img/logotype.svg">
+                </div>
+                
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+    
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a class="nav__menu-link underline-effect" href="#aboutMe">About Us</a></li>                       
+                        <li><a class="nav__menu-link underline-effect" href="#horoscopes">Shop</a></li>
+                        <li><a class="nav__menu-link underline-effect" href="#testimonials">Best Deals</a></li>
+                        <li><a class="nav__menu-link underline-effect" href="#classes">App</a></li>
+                        <li><a class="nav__menu-link underline-effect" href="#contacts">Contacts</a></li>
+                    </ul>   
+                </nav>
+            </div>
+     
+        </div>
+    </header>
+
+
+    <section class="foodMarker_block_shopForGroceries">
+        <div class="foodMarket_forGroceries">
+            <div class="blockOne_forGroceries">
+                <div class="text_forGroceries">
+                    <p class="pp_text_forGroceries">Shop</p>
+                    <h1 class="hh1_forGroceries_text_one">Shop for Groceries</h1>
+                    <h1 class="hh1_forGroceries_text_two">Online Here</h1>
+                </div>
+
+                <div class="white_text_block"></div>
+            </div>
+
+            <div class="buttom_forGroceries_position">
+                <div class="buttom_forGroceries_one">
+                    <button class="button_container_one" type="submit">
+                        <div class="button__inner_2of">
+                            <span class="button_text_one_fo">Shop Now</span>
+                            <span class="button__icon_286 button__icon--right_1Bt " aria-hidden="true"><span class="iconElement_3D2 ui-icon_2oI w-icon" style="color:inherit"><span class="iconElement__inner_2iN"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 100 100" style="max-width:100%" height="100%"><defs fill="currentColor"><g id="a" fill="currentColor"><path fill="currentColor" stroke="currentColor" d=" M 55.25 35.75 Q 55.25 38.2 61.55 43.8 62.2 44.35 67.25 48.4 55.2 48.3 26.15 47.2 22.45 47.2 21.1 48.25 20.15 49 20.15 50.9 20.15 55 47.75 54.2 58.45 53.9 66.75 52.95 68.1 52.8 69.25 52.6 67.15 54.6 62.05 59.3 54.9 66 54.9 66.2 54.9 67 55.15 67.05 L 55.4 66.95 Q 60.5 67.75 70.55 59.8 79.9 52.4 79.9 50.25 58.3 32.95 58.15 32.95 56.7 32.95 55.85 34 55.25 34.85 55.25 35.75 Z" ></path></g></defs><g transform="matrix( 1, 0, 0, 1, 0,0) " fill="currentColor"><use xlink:href="#a" fill="currentColor"></use></g></svg></span></span></span>
+                        </div>
+                    </button>
+                </div> 
+
+
+                <div class="buttom_forGroceries_two coloooo" type="submit">
+                    <button class="button_container_two" type="submit">
+                        <div class="button__inner_2of">
+                            <span class="button_text_one_fo">Try Our App</span>
+                            <span class="button__icon_286 button__icon--right_1Bt coloryt" aria-hidden="true"><span class="iconElement_3D2 ui-icon_2oI w-icon" style="color:inherit"><span class="iconElement__inner_2iN"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;max-width:100%" xml:space="preserve" height="100%"><g fill="currentColor"><path d="M15.409,1.773H8.591c-1.566,0-2.841,1.275-2.841,2.841v14.773c0,1.566,1.275,2.841,2.841,2.841h6.818   c1.566,0,2.841-1.275,2.841-2.841V4.614C18.25,3.047,16.975,1.773,15.409,1.773z M17.114,19.386c0,0.94-0.765,1.705-1.705,1.705   H8.591c-0.94,0-1.705-0.765-1.705-1.705V4.614c0-0.94,0.765-1.705,1.705-1.705h6.818c0.94,0,1.705,0.765,1.705,1.705V19.386z" fill="currentColor"></path><circle cx="12" cy="19.386" r="1.136" fill="currentColor"></circle><path d="M13.136,3.477h-2.273c-0.314,0-0.568,0.254-0.568,0.568s0.254,0.568,0.568,0.568h2.273c0.314,0,0.568-0.254,0.568-0.568   S13.45,3.477,13.136,3.477z" fill="currentColor"></path></g></svg></span></span></span>
+                        </div>
+                    </button>
+                </div>    
+            </div>  
+
+        </div>
+    </section>
+
+
+    <section class="forGroceries_block_down">
+        <div class="forGroceries_posit_down">
+
+        </div>
+    </section>
+
+
+    <section class="image_fruit_block">
+        <div class="image__fruit_block_position">
+
+           <div class="elements_position_fruit_block"> 
+                <div class="oneElement_fruit_block">
+                    <img class="image_fruit_all" src="img/image_fruit_block/foto1FreshFruit.svg">
+                    <h2 class="hh2_fruit_pictures_text">Fresh Fruit</h2>
+                </div>
+
+                <div class="oneElement_fruit_block">
+                    <img class="image_fruit_all" src="img/image_fruit_block/foto2Vegetables.svg">
+                    <h2 class="hh2_fruit_pictures_text">Vegetables</h2>
+                </div>
+
+                <div class="oneElement_fruit_block">
+                    <img class="image_fruit_all" src="img/image_fruit_block/foto3Beries.svg">
+                    <h2 class="hh2_fruit_pictures_text">Berries</h2>
+                </div>
+
+                <div class="oneElement_fruit_block">
+                    <img class="image_fruit_all" src="img/image_fruit_block/foto4Nuts.svg">
+                    <h2 class="hh2_fruit_pictures_text">Nuts</h2>
+                </div>
+
+                <div class="oneElement_fruit_block">
+                    <img class="image_fruit_all" src="img/image_fruit_block/foto5Beverages.svg">
+                    <h2 class="hh2_fruit_pictures_text">Beverages </h2>
+                </div>
+           </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="aboutUs_background">
+        <div class="aboutUs_block_position">
+            <div>
+                <img class="image_aboutUss" src="img/background/aboutUss.webp">
+            </div>
+            <div class="all_text_aboutUss_size">
+                <p class="pp_aboutUss_text">About Us</p>
+                <h2 class="hh2_fresh_Produce">Fresh Produce Delivered</h2>
+                <h3 class="hh3_shopForGroceries">Shop for groceries online at Freshy and get everything delivered right in time. We ease your everyday routine and make your online shopping really comfortable. At Freshy, you can order the following items:</h3>
+                
+                <div class="green_text_icon_elements">
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Vegetables</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Fresh fruit</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Canned goods</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Diary products</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Berries and nuts</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Dried fruit</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Bakery</p>
+                    </div>
+
+                    <div class="green_image_text_position">
+                        <span><svg class="imagen_green_elem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path fill="currentColor" d="M97.157,49.83c-2.968-3.046-3.63-7.685-1.633-11.452  c1.426-2.686,1.524-5.891,0.27-8.662c-1.255-2.772-3.722-4.794-6.669-5.468c-4.133-0.944-7.176-4.486-7.515-8.744  c-0.241-3.037-1.877-5.788-4.419-7.435c-2.543-1.647-5.701-2.004-8.541-0.964c-3.984,1.458-8.442,0.137-11.01-3.26  C55.807,1.423,52.957,0,49.936,0c-3.022,0-5.871,1.423-7.704,3.846c-2.568,3.396-7.028,4.717-11.009,3.259  c-2.841-1.04-6.001-0.683-8.542,0.964c-2.543,1.647-4.178,4.397-4.42,7.435c-0.339,4.258-3.383,7.799-7.514,8.744  c-2.948,0.674-5.415,2.696-6.67,5.469c-1.256,2.771-1.156,5.975,0.27,8.662c1.998,3.767,1.335,8.405-1.634,11.452  c-2.118,2.174-3.109,5.219-2.678,8.236c0.43,3.016,2.231,5.656,4.871,7.141c3.7,2.08,5.631,6.342,4.767,10.523  c-0.616,2.982,0.184,6.084,2.163,8.389c1.979,2.303,4.911,3.543,7.928,3.352c4.229-0.268,8.138,2.266,9.652,6.256  c1.082,2.846,3.418,5.018,6.318,5.877c2.899,0.859,6.031,0.303,8.466-1.502c3.414-2.529,8.062-2.529,11.474,0  c2.437,1.805,5.566,2.361,8.467,1.502c2.899-0.859,5.236-3.031,6.317-5.877c1.515-3.99,5.425-6.523,9.653-6.256  c3.016,0.191,5.947-1.049,7.926-3.352c1.98-2.305,2.779-5.406,2.164-8.389c-0.864-4.182,1.065-8.443,4.766-10.523  c2.641-1.484,4.443-4.125,4.871-7.141C100.267,55.049,99.277,52.004,97.157,49.83z M41.643,74.562l-21.26-21.443l9.052-9.128  l12.208,12.312l28.184-28.417l9.058,9.125L41.643,74.562z" ></path></svg></span>
+                        <p class="green_text_size">Beverages</p>
+                    </div>
+                </div>
+                
+                <h3 class="hh3_weWorkWith">We work with the best local farmers and manufacturers. We offer only GMO-free produce at great prices and with complimentary shipping right to your doorstep. Select the items you need and enjoy! </h3>
+                
+                <div class="buttom_aboutUss" type="submit">
+                    <button class="button_container_aboutUss" type="submit">
+                        <div class="button__inner_2of">
+                            <span class="button_text_one_fo">Shop Now</span>
+                            <span class="button__icon_286 button__icon--right_1Bt "><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" style="max-width:100%" height="100%"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.984,20.566c3.479-4.33,10.235-3.649,15.025-2.623   c4.783-1.024,11.533-1.709,15.009,2.614c2.166,2.694,2.529,6.738,1.698,10.866c-0.858,4.268-2.985,8.579-5.736,11.642   c-3.111,3.463-6.601,5.31-10.998,3.032c-4.386,2.273-7.869,0.438-10.974-3.017c-2.691-2.995-4.783-7.2-5.672-11.391   C7.584,28.023,7.51,23.646,9.984,20.566 M21.347,5.778c1.457,1.029,2.294,2.469,2.374,4.516c-2.329,0.008-4.142-0.709-5.536-1.832   c-1.593-1.282-2.692-3.11-3.424-5.021C17.547,3.961,19.795,4.68,21.347,5.778z M19.3,22.806l0.1-2.813   c-1.38-0.052-2.8,0.036-4.063,0.389c-3.18,0.891-4.474,3.217-4.641,6.378c-0.089,1.687,0.173,3.493,0.579,5.116l2.736-0.685   c-0.347-1.391-0.574-2.914-0.501-4.288c0.102-1.944,0.636-3.26,2.588-3.808C17.053,22.828,18.181,22.763,19.3,22.806z    M31.447,2.913l-2.982-1.324c-0.867,1.622-1.754,3.542-2.516,5.556c-0.588-1.496-1.598-2.697-2.98-3.673   c-2.362-1.67-5.801-2.584-10.043-3.18L10.852,0l0.512,2.03c0.782,3.101,2.323,6.43,5.055,8.628c1.972,1.588,4.526,2.57,7.798,2.444   c-0.113,0.596-0.202,1.183-0.264,1.755c-8.184-1.47-13.319,0.404-16.163,3.944c-2.991,3.722-3.163,8.975-2.218,13.453   c0.985,4.664,3.326,9.357,6.342,12.713c3.695,4.112,8.415,6.284,13.071,4.274c4.663,2.013,9.391-0.169,13.093-4.29   c3.07-3.417,5.441-8.223,6.397-12.976c0.983-4.891,0.479-9.775-2.261-13.183c-2.777-3.453-7.738-5.318-15.593-4.031   c0.161-0.975,0.387-1.94,0.655-2.87C28.319,8.28,29.595,5.846,31.447,2.913z" fill="currentColor"></path></g></svg></span>
+                        </div>
+                    </button>
+                </div>    
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="howItWorks_background">
+        <div class="howItWorks_block_position">
+            <div>
+                <div class="pp_hh23_elem_position">
+                    <p class="pp_howItWorks_text">How It Works</p>
+                    <h2 class="hh2_dontWorry_text">Dont Worry, We'll Deliver</h2>
+                    <h3 class="hh3_weWorkWith_text">We work with a number of local farms and grocery stores to deliver you the freshest and organic product for your delicious dishes.</h3>
+                </div>
+
+                <div class="elements_howItWorks_three">
+                    <div class="one_element_howItWorks">
+                        <img class="image_howItWorks" src="img/some/howItWorks_1.svg">
+                        <div class="hh3_chooseItems_text_position">
+                            <h3 class="hh3_text_number_one">1.</h3>
+                            <h3 class="hh3_text_text_two">Choose Items</h3>
+                        </div>
+
+                        <p class="pp_text_shopOnline">Shop online right on this website and select the items you need.</p>
+                    </div>
+
+                    <div class="one_element_howItWorks">
+                        <img class="image_howItWorks" src="img/some/howItWorks_2.svg">
+                        <div class="hh3_chooseItems_text_position">
+                            <h3 class="hh3_text_number_one">2.</h3>
+                            <h3 class="hh3_text_text_two">Place an Order</h3>
+                        </div>
+
+                        <p class="pp_text_shopOnline">Add the items to cart and pay for your order online, then specify the delivery time frame.</p>
+                    </div>
+
+                    <div class="one_element_howItWorks">
+                        <img class="image_howItWorks" src="img/some/howItWorks_3.svg">
+                        <div class="hh3_chooseItems_text_position">
+                            <h3 class="hh3_text_number_one">3.</h3>
+                            <h3 class="hh3_text_text_two">Get Your Delivery</h3>
+                        </div>
+
+                        <p class="pp_text_shopOnline">We will deliver you order right in time. We use eco-friendly packaging.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+
+    <section class="weekly_Fresh_background">
+        <div class="weekly_Fresh_block_position">
+
+            <div class="weekly_fresh_elements_position">
+                <div class="weekly_block_one_background">
+                    <div class="weekly_fresh_text_pp_hh3_aa">
+                        <p class="pp_weekly_fresh_text">25% off</p>
+                        <h3 class="hh3_weekly_fresh_text">Weekly Sales</h3>
+                        <a href="#" class="aa_weekly_text_elements">
+                            <p class="pp_weekly_fresh_text_one">Shop Now</p>
+                            <svg class="line_weekly_fresh_size" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 100 100" style="max-width:100%" height="100%"><defs fill="currentColor"><g id="a" fill="currentColor"><path fill="currentColor" stroke="currentColor" d=" M 55.25 35.75 Q 55.25 38.2 61.55 43.8 62.2 44.35 67.25 48.4 55.2 48.3 26.15 47.2 22.45 47.2 21.1 48.25 20.15 49 20.15 50.9 20.15 55 47.75 54.2 58.45 53.9 66.75 52.95 68.1 52.8 69.25 52.6 67.15 54.6 62.05 59.3 54.9 66 54.9 66.2 54.9 67 55.15 67.05 L 55.4 66.95 Q 60.5 67.75 70.55 59.8 79.9 52.4 79.9 50.25 58.3 32.95 58.15 32.95 56.7 32.95 55.85 34 55.25 34.85 55.25 35.75 Z" ></path></g></defs><g transform="matrix( 1, 0, 0, 1, 0,0) " fill="currentColor"><use xlink:href="#a" fill="currentColor"></use></g></svg> 
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="weekly_block_two_background">
+                    <div class="weekly_fresh_text_pp_hh3_aa">
+                        <p class="pp_weekly_fresh_text">Exotic</p>
+                        <h3 class="hh3_weekly_fresh_text">Fresh Fruit</h3>
+                        <a href="#" class="aa_weekly_text_elements">
+                            <p class="pp_weekly_fresh_text_one">Shop Now</p>
+                            <svg class="line_weekly_fresh_size" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 100 100" style="max-width:100%" height="100%"><defs fill="currentColor"><g id="a" fill="currentColor"><path fill="currentColor" stroke="currentColor" d=" M 55.25 35.75 Q 55.25 38.2 61.55 43.8 62.2 44.35 67.25 48.4 55.2 48.3 26.15 47.2 22.45 47.2 21.1 48.25 20.15 49 20.15 50.9 20.15 55 47.75 54.2 58.45 53.9 66.75 52.95 68.1 52.8 69.25 52.6 67.15 54.6 62.05 59.3 54.9 66 54.9 66.2 54.9 67 55.15 67.05 L 55.4 66.95 Q 60.5 67.75 70.55 59.8 79.9 52.4 79.9 50.25 58.3 32.95 58.15 32.95 56.7 32.95 55.85 34 55.25 34.85 55.25 35.75 Z" ></path></g></defs><g transform="matrix( 1, 0, 0, 1, 0,0) " fill="currentColor"><use xlink:href="#a" fill="currentColor"></use></g></svg> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="freshDeals_background">
+        <div class="freshDeals_block_position">
+            <div>
+                <div class="pp_hh23_elem_position_freshD">
+                    <p class="pp_freshDeals_text">Fresh Deals</p>
+                    <h2 class="hh2_freshDeals_text">Right Off the Vine</h2>
+                    <h3 class="hh3_freshDeals_text">We are constantly updating our range and adding seasonal items. Check out the freshest products and add them to your shopping cart. </h3>
+                </div>
+            </div>
+
+            <section class="tabs">
+                <label class="tab">
+                  <input type="radio" name="tabs" hidden class="tab-actor" checked />
+                  Fruit
+                </label>
+                <article class="tab-panel">
+                <div class="hrhrhr_position"><hr class="hrhrhr"></div>
+                  <div class="tab_elements_posiition_Fresh">
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/a_freshFigs.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Fresh Figs</h3>
+                                <p class="pp_price_fresh_text">5,00USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/b_limes.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Limes</h3>
+                                <p class="pp_price_fresh_text">1,00USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/c_peaches.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Peaches</h3>
+                                <p class="pp_price_fresh_text">3,00USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/d_tangerines.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Tangerines</h3>
+                                <p class="pp_price_fresh_text">2,00USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                  </div>
+                </article>
+          
+                <label class="tab">
+                  <input type="radio" name="tabs" hidden class="tab-actor" />
+                  Vegetables
+                </label>
+                <article class="tab-panel">
+                    <div class="hrhrhr_position"><hr class="hrhrhr"></div>
+                    <div class="tab_elements_posiition_Fresh">
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/e_bellPepper.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Bell Pepper</h3>
+                                <p class="pp_price_fresh_text">8,00USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/f_tomatoes.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Tomatoes</h3>
+                                <p class="pp_price_fresh_text">4,00USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/g_carrots.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Carrots</h3>
+                                <p class="pp_price_fresh_text">1,60USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                        <div class="content_text_freshDeals">
+                            <div class="content_position_freshDeals">
+                                <img src="img/freshDeals/h_pumpkin.png" class="fotoelement_freshDeals">
+
+                                <h3 class="hh3_freshFigs_text">Pumpkin</h3>
+                                <p class="pp_price_fresh_text">1,50USD</p>
+
+                                <div class="buttom_personal_readings">
+                                    <form name="form-btn_personal_readings" >
+                                        <button class="button__personal_container" type="submit">Buy Now</button>
+                                    </form> 
+                                </div> 
+                            </div>   
+                        </div>
+
+                  </div>
+                </article>
+
+
+
+                <label class="tab">
+                    <input type="radio" name="tabs" hidden class="tab-actor" />
+                    Berries
+                  </label>
+                  <article class="tab-panel">
+                  <div class="hrhrhr_position"><hr class="hrhrhr"></div>
+                      <div class="tab_elements_posiition_Fresh">
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/i_Blueberries.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Blueberries</h3>
+                                  <p class="pp_price_fresh_text">5,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/j_RedGrapes.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Red Grapes</h3>
+                                  <p class="pp_price_fresh_text">3,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/k_WaterMelon.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Water Melon</h3>
+                                  <p class="pp_price_fresh_text">6,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/l_Raspberries.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Raspberries</h3>
+                                  <p class="pp_price_fresh_text">3,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                    </div>
+                  </article>
+
+
+
+                  <label class="tab">
+                    <input type="radio" name="tabs" hidden class="tab-actor" />
+                    Nuts
+                  </label>
+                  <article class="tab-panel">
+                    <div class="hrhrhr_position"><hr class="hrhrhr"></div>
+                      <div class="tab_elements_posiition_Fresh">
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/m_CashewNuts.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Cashew Nuts</h3>
+                                  <p class="pp_price_fresh_text">13,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/n-Macadamia_Nuts.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Macadamia Nuts</h3>
+                                  <p class="pp_price_fresh_text">17,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/o_RawWalnuts.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Raw Walnuts</h3>
+                                  <p class="pp_price_fresh_text">9,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                          <div class="content_text_freshDeals">
+                              <div class="content_position_freshDeals">
+                                  <img src="img/freshDeals/p_Pistachios.png" class="fotoelement_freshDeals">
+  
+                                  <h3 class="hh3_freshFigs_text">Pistachios</h3>
+                                  <p class="pp_price_fresh_text">12,00USD</p>
+  
+                                  <div class="buttom_personal_readings">
+                                      <form name="form-btn_personal_readings" >
+                                          <button class="button__personal_container" type="submit">Buy Now</button>
+                                      </form> 
+                                  </div> 
+                              </div>   
+                          </div>
+  
+                    </div>
+                  </article>
+
+              </section>
+    
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="whyChooseUs_background">
+        <div class="whyChooseUs_block_position">
+
+            <div class="elements_block_size_whyChooseUs"></div>
+
+            <div class="elements_block_size_whyChooseUs">
+                <div class="hjkkkk">
+                    <div class="pp_hh23_elem_position_whyChooseUs">
+                        <p class="pp_whyChooseUs_text_one">Why Choose Us</p>
+                        <h2 class="hh2_whyChooseUs_text_one">Tasty and Healty Organic Produts for You</h2>
+                        <h3 class="hh3_whyChooseUs_text_one">Our goal is to make your everyday shopping really easy and pleasant. We work with the best local farms, producers, and grocery stores. </h3>
+                    </div>
+
+
+                    <div class="foto_elements_whyChooseus">
+                        
+                        <div class="elements_two_whyChooseUs_column">
+                            <div class="foto_hh3_pp_whyChooseUss">
+                                <img class="image_whyChooseUs" src="img/some/whyChoose_free.svg">
+                                <div>
+                                    <h3 class="hh3_whyChooseUs_text">Free Delivery</h3>
+                                    <p class="pp_whyChooseUs_text">Free delivery for all orders from $49.</p>
+                                </div>
+                            </div>
+
+                            <div class="foto_hh3_pp_whyChooseUss">
+                                <img class="image_whyChooseUs" src="img/some/whyChoose_discounts.svg">
+                                <div>
+                                    <h3 class="hh3_whyChooseUs_text">Discounts</h3>
+                                    <p class="pp_whyChooseUs_text">We have weekly discounts on all items.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="elements_two_whyChooseUs_column">
+                            <div class="foto_hh3_pp_whyChooseUss">
+                                <img class="image_whyChooseUs" src="img/some/whyChoose_support.svg">
+                                <div>
+                                    <h3 class="hh3_whyChooseUs_text">Support 24/7</h3>
+                                    <p class="pp_whyChooseUs_text">Want to change your order? Just contact us.</p>
+                                </div>
+                            </div>
+
+                            <div class="foto_hh3_pp_whyChooseUss">
+                                <img class="image_whyChooseUs" src="img/some/whyChoose_easyup.svg">
+                                <div>
+                                    <h3 class="hh3_whyChooseUs_text">Easy App</h3>
+                                    <p class="pp_whyChooseUs_text">Order fresh produce on-the-go with our app.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="whyChooseUs_background_green">
+        <div class="whyChooseUs_block_position_green">
+
+            <div class="hh3_pp_whyChoose_greenText">
+                <h3 class="hh3_whyChoose_green">7</h3>
+                <p class="pp_whyChoose_green">NY boroughs covered</p>
+            </div>
+
+            <div class="hh3_pp_whyChoose_greenText">
+                <h3 class="hh3_whyChoose_green">300+</h3>
+                <p class="pp_whyChoose_green">Fresh fruit & vegetables every day</p>
+            </div>
+
+            <div class="hh3_pp_whyChoose_greenText">
+                <h3 class="hh3_whyChoose_green">12,000</h3>
+                <p class="pp_whyChoose_green">Happy clients in 2022</p>
+            </div>
+
+            <div class="hh3_pp_whyChoose_greenText">
+                <h3 class="hh3_whyChoose_green">74</h3>
+                <p class="pp_whyChoose_green">Accurate couriers</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="topPics_background_green">
+        <div class="topPics_block_position">
+
+            <div>
+                <div class="pp_hh23_elem_position_topPics">
+                    <p class="pp_topPics_text">Top Picks</p>
+                    <h2 class="hh2_topPics_text">Deals of the Week</h2>
+                    <h3 class="hh3_topPics_text">We cut prices for certain products every week. You can always order items you need at the lowest prices and enjoy seasonal items. </h3>
+                </div>
+            </div>
+
+            <section class="slider_container">
+                <div class="container">
+                    <div class="swiper card_slider">
+                        <div class="swiper-wrapper">
+        
+                            <div class="swiper-slide content_text_topPicks">
+                                <div class="img_box content_position_topPicks">
+                                    <img src="img/some/topPikcs_1.png" class="fotoelement_topPicks">
+        
+                                    <h3 class="hh3_topPicks_text">Granny Smith Apples</h3>
+                                    <p class="pp_price_topPicks">2,00USD</p>
+        
+                                    <div class="buttom_topPicks">
+                                        <form name="form-btn_topPicks" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_2.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Strawberries</h3>
+                                    <p class="pp_price_fresh_text">8,00USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_3.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Blackberries</h3>
+                                    <p class="pp_price_fresh_text">4,00USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_4.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Mango</h3>
+                                    <p class="pp_price_fresh_text">2,50USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                            <div class="swiper-slide content_text_freshDeals">
+                                <div class="img_box content_position_freshDeals">
+                                    <img src="img/some/topPikcs_5.png" class="fotoelement_freshDeals">
+        
+                                    <h3 class="hh3_freshFigs_text">Organic Lemons</h3>
+                                    <p class="pp_price_fresh_text">1,33USD</p>
+        
+                                    <div class="buttom_personal_readings">
+                                        <form name="form-btn_personal_readings" >
+                                            <button class="button__personal_container" type="submit">Buy Now</button>
+                                        </form> 
+                                    </div> 
+                                </div>   
+                            </div>
+        
+                        </div>
+                        
+                        <div class="swiper-button-next colorit"></div>
+                        <div class="swiper-button-prev colorit"></div>
+                        <div class="swiper-pagination" style="--swiper-pagination-color: #a9c623;"></div>
+                    </div>
+        
+                </div>
+            </section>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script type="text/javascript">
+                var swiper = new Swiper(".card_slider", {
+                    slidesPerView: 4, 
+                    spaceBetween: 30, 
+                    loop: true,
+                    speed: 500,
+                    pagination: {
+                        el: ".swiper-pagination", 
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        480: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                        },
+                    },
+                });
+            </script>
+           
+        </div>
+    </section>
+
+
+    <section class="timeDays_background_all">
+        <div class="timeDays_block_position">
+
+            <section class="timeCode_background_bestDeals">
+                <div class="marrggg">
+                    <div class="pp_hh23_elem_position_timeDays">
+                        <p class="pp_timeDays_text">25% off</p>
+                        <h2 class="hh2_timeDays_text">Best Deals of the Week</h2>
+                        <h3 class="hh3_timeDays_text">Take advantage of our limited-time offer and get a 25% discount on any items with our unique promo code!  </h3>
+                    </div>
+
+                    <div>
+                        <div class="launch-time">
+                            <div>
+                                <p id="days">00</p>
+                                <span>Days</span>
+                            </div>
+
+                            <div>
+                                <p id="hours">00</p>
+                                <span>Hours</span>
+                            </div>
+
+                            <div>
+                                <p id="minutes">00</p>
+                                <span>Minutes</span>
+                            </div>
+
+                            <div>
+                                <p id="seconds">00</p>
+                                <span>Seconds</span>
+                            </div> 
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="hh3_useCode_Fresh_position">
+                        <h3 class="hh3_textcolor_usecodeTime_one">Use code:</h3>>
+                        <h3 class="hh3_textcolor_usecodeTime_two">Fresh Food</h3>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+
+    <section class="orangeSmall_background_all">
+        <div class="orangeSmall_block_position">
+         
+         </div>
+    </section>
+
+
+
+
+    <section class="ourApp_background_all">
+        <div class="ourApp_block_position">
+         
+         </div>
+    </section>
+
+
+
+    
+  
+
+
+
+
+    <script src="javaScript/header.js"></script>
+    <script src="javaScript/time_days.js"></script>
+</main>
+    <footer></footer>
+
+
+   
+
+
+
+
+</body>
+</html>
