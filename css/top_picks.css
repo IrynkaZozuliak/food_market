@@ -65,10 +65,9 @@
 
 
 
-  .content_text_topPicks {
+  .content_text_topPicks  {
     width: 275px;
     background-color: #fbf4f0;
-    border: solid;
 }
 
 .content_position_topPicks {
@@ -141,8 +140,4 @@
     border-radius: 5px;
     border-width: 5px;
 }
-
-
-
-
 
