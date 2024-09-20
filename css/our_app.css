@@ -1,4 +1,4 @@
-.ourApp_background_all {
+.ourapp {
     background-color: #fbf4f0;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,21 @@
     overflow-x: hidden;
     }
   
-  .ourApp_block_position {
+  .ourapp__position {
     margin-top: 100px;
     margin-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .ourapp__element {
+    padding: 5px;
+    border: solid;
+  }
+
+  .ourapp__element-image {
+    width: 570px;
+    height: 543px;
   }
