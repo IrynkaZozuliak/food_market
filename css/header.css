@@ -1,4 +1,4 @@
-    .orange_block_header {
+    .section__contactsicons--orange {
       background: #fbf4f0;
       background-size: cover;
       background-position: center; 
@@ -6,7 +6,7 @@
       }
 
 
-      .elements_orange_block_position {
+      .contactsicons__position {
         display: flex;
       flex-direction: row;
       justify-content:space-around;
@@ -19,19 +19,19 @@
       margin-bottom: 15px;
       }
 
-    .phone_location_position {
+    .contactsicons__left {
       display: flex;
       flex-direction: row;
       gap: 15px;
     }
 
-    .text_phone_locat_posit {
+    .contactsicons__phone-location {
       display: flex;
       flex-direction: row;
       gap: 5px;
     }
 
-    .pp_head_orange {
+    .contactsicons__phone-location p {
       font-size: 14px;
       font-family: "Istok Web", sans-serif;
       font-weight: 600;
@@ -41,7 +41,7 @@
       letter-spacing: 0.05px;
     }
 
-    .pp_head_gray {
+    .contactsicons__phone-location span {
       color: rgb(164, 157, 152);
       line-height: 1.6;
       font-size: 14px;
@@ -52,19 +52,27 @@
 
 
 
-    .icons_positions_block ul  {
+    .contactsicons__left ul  {
       display: flex;
       flex-direction: row;
     
       gap: 15px;
       list-style-type: none;
+       
       }
 
-    .icons_positions_block ul li  {
+    .contactsicons__left ul li  {
       width:27px;
       height:27px;
       }
 
+      .contactsicons__left ul li a {
+        fill: rgb(164, 157, 152);
+        }
+      
+        .contactsicons__left ul li a:hover {
+          fill: rgb(118, 114, 111);
+          }
 
 
     .image_header_logo {
