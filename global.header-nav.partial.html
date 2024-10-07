@@ -67,28 +67,40 @@
         </div>
 
 
-        <div class="menu_link"> 
-            <div>
-                <img class="image_header_logo" src="img/logotype.svg">
-            </div>
-            
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+        
+       
 
-            <nav class="nav-bar">
-                <ul>
-                    <li><a class="nav__menu-link underline-effect" href="#aboutMe">About Us</a></li>                       
-                    <li><a class="nav__menu-link underline-effect" href="#horoscopes">Shop</a></li>
-                    <li><a class="nav__menu-link underline-effect" href="#testimonials">Best Deals</a></li>
-                    <li><a class="nav__menu-link underline-effect" href="#classes">App</a></li>
-                    <li><a class="nav__menu-link underline-effect" href="#contacts">Contacts</a></li>
-                </ul>   
-            </nav>
-        </div>
+        <nav class="header__nav">
+            <div class="header__nav-container">
+
+              <div class="header__logo-container">
+                <a class="header__logo-link" href="index.html">
+                  <img class="header__logo--image" src="img/logotype.svg" alt="FoodMarket Logo" />
+                </a>
+              </div>
+          
+              <div>
+                <input type="checkbox" id="check"> 
+                <label class="header__hamburger" for="check">
+                    <span class="header__hamburger-line"></span>
+                    <span class="header__hamburger-line"></span>
+                    <span class="header__hamburger-line"></span>
+                </label>
+              </div>
+          
+              <nav class="header__nav-bar">
+                <ul class="header__menu">
+                  <li><a class="header__menu-link underline-effect" href="#aboutMe" data-proofer-ignore>About Us</a></li>
+                  <li><a class="header__menu-link underline-effect" href="#horoscopes" data-proofer-ignore>Shop</a></li>
+                  <li><a class="header__menu-link underline-effect" href="#testimonials" data-proofer-ignore>Best Deals</a></li>
+                  <li><a class="header__menu-link underline-effect" href="#classes" data-proofer-ignore>App</a></li>
+                  <li><a class="header__menu-link underline-effect" href="#contacts" data-proofer-ignore>Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+        </nav>
  
     </div>
+    <script src="javaScript/header.js"></script>
 </header>
 
