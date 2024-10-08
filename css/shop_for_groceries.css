@@ -1,4 +1,4 @@
-.foodMarker_block_shopForGroceries {
+.shop {
     background: url(/img/background/aboutUs_back.png);
     background-size: cover;
     background-position: center;
@@ -9,32 +9,35 @@
     overflow-x: hidden;
     }
 
-.foodMarket_forGroceries {
+.shop__properties {
     margin-top: 250px;
     margin-bottom: 250px;
 }
 
-.blockOne_forGroceries {
+.shop__properties--text {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 90px;
+    margin-left: 50px;
 }
 
-.text_forGroceries {
+.shop__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
     margin-right: 15px;
+    
     width: 680px;
+    border: solid;
 }
 
-.white_text_block {
+.shop__text--transparent {
     width: 550px;
+    border: solid;
 }
 
-.pp_text_forGroceries {
+.shop__text h1 {
     font-size: 14px;
     font-family: "Istok Web", sans-serif;
     font-weight: 600;
@@ -43,7 +46,7 @@
     line-height: 1.3;
 }
 
-.hh1_forGroceries_text_one {
+.shop__text h2 {
     font-size: 72px;
     font-family: "Istok Web", sans-serif;
     font-weight: 700;
@@ -52,7 +55,7 @@
     line-height: 1.1;  
 }
 
-.hh1_forGroceries_text_two {
+.shop__text p {
     font-size: 72px;
     font-family: "Istok Web", sans-serif;
     font-weight: 600;
@@ -64,97 +67,15 @@
 
 
 
-
-.buttom_forGroceries_position {
-    display: flex;
-    flex-direction: row;
-    margin-left: 190px;
-    margin-right: 190px;
-    gap: 20px;
-    margin-top: 50px;
+.vgvgg {
+  width: 27px;
+  border: solid;
 }
 
-.buttom_forGroceries_one button[type="submit"] {
-    display: inline-block;
-
-    font-size: 13px;
-    background: #a9c623;
-    color: #ffffff;
-    border: 1px solid transparent;
-    cursor: pointer;
-    padding: 0.75rem 1.55rem;
-    transition: background 0.25s, color 0.25s;
-  }
-  
-  .buttom_forGroceries_one button[type="submit"]:hover {
-    color: #fff;
-    background: rgb(148, 175, 22);
-  }
-
-  .buttom_forGroceries_two button[type="submit"] {
-    display: inline-block;
-    background: none;
-    border: 2px solid #a9c623;
-    color: #f69946;
-    border-radius: 5px;
-    font-size: 13px;
-    cursor: pointer;
-    padding: 0.75rem 1.55rem;
-    transition: background 0.25s, color 0.25s;
-  }
-  
-  .buttom_forGroceries_two button[type="submit"]:hover {
-    color: #fff;
-    background: #a9c623;
-  }
 
 
-  .button_container_one { 
-    width: 170px;
-    height: 60px;
-    border: none;
-    background-color: #a9c623;
-    text-decoration: none;
- 
-    font-optical-sizing: auto;
-    font-weight: 700;
-  
-    border-radius: 5px;
-    border-width: 5px;
-  }
 
-  .button_container_two { 
-    width: 180px;
-    height: 60px;
-   
-    font-optical-sizing: auto;
-    font-weight: 700;
-  }
 
-   
-
-  .button__inner_2of { 
-    text-align: start;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.button__icon_286 {
-    display: inline-block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.button__icon--right_1Bt {
-    right: 0;
-}
 
 
 

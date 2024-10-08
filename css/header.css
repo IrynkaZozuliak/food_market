@@ -3,21 +3,21 @@
       background-size: cover;
       background-position: center; 
       overflow-x: hidden;
-      border: solid;
+    
       }
 
 
       .contactsicons__position {
         display: flex;
       flex-direction: row;
-      justify-content:space-around;
+      justify-content: space-around;
       align-items: center;
-      gap: 250px;
-      margin-left: 7px;
-      margin-right: 10px;
-      
+      gap: 330px;
+
       margin-top: 15px;
       margin-bottom: 15px;
+      margin-left: 30px;
+      margin-right: 30px;
       }
 
     .contactsicons__left {
@@ -32,7 +32,7 @@
       gap: 5px;
     }
 
-    .contactsicons__phone-location p {
+    .contactsicons__phone-location p{
       font-size: 14px;
       font-family: "Istok Web", sans-serif;
       font-weight: 600;
@@ -42,7 +42,7 @@
       letter-spacing: 0.05px;
     }
 
-    .contactsicons__phone-location span {
+    .contactsicons__phone-location span{
       color: rgb(164, 157, 152);
       line-height: 1.6;
       font-size: 14px;
@@ -91,21 +91,19 @@
 
 
     .header__nav {
-     
       display: flex;
-      margin: 0;
-      padding: 0;
       flex-direction: column;
       overflow-x: hidden;
       padding-top: 20px;
       padding-bottom: 25px;
+  
     }
     
     .header__logo-container {
       z-index: 3;
     }
     .header__logo-image {
-      width: 170px;
+      width: 190px;
     }
     
     .header__nav-container {
@@ -113,8 +111,9 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      margin-left: 90px;
-      margin-right: 90px;
+      margin-left: 30px;
+      margin-right: 30px;
+     
     }
     
     @media only screen and (min-width: 320px) and (max-width: 477px) {
