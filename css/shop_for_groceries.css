@@ -18,7 +18,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 50px;
+    gap: 30px;
+
 }
 
 .shop__text {
@@ -28,12 +29,12 @@
     gap: 15px;
     margin-right: 15px;
     
-    width: 680px;
+    width: 670px;
     border: solid;
 }
 
 .shop__text--transparent {
-    width: 550px;
+    width:470px;
     border: solid;
 }
 
@@ -65,12 +66,51 @@
 }
 
 
-
-
-.vgvgg {
-  width: 27px;
-  border: solid;
+.shop__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 55px;
 }
+
+
+
+.shop__text--links {
+    padding: 21px 52px;
+    background: #A9C623;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .shop__text--links:hover {
+    color: #fff;
+    background: #96af23;
+    transition: 0.4s;
+  }
+
+  .shop__app--links {
+    padding: 21px 55px;
+   
+    color: #F69946;
+    border: solid;
+    border-color: #A9C623;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .shop__app--links:hover {
+    color: #fff;
+    background: #A9C623;
+    transition: 0.4s;
+  }
+
 
 
 
