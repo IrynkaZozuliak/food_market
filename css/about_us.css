@@ -1,5 +1,5 @@
  
-  .aboutUs_block_position {
+  .aboutus__content {
     margin-top: 60px;
     margin-bottom: 55px;
 
@@ -10,12 +10,12 @@
   }
 
 
-  .image_aboutUss {
+  .aboutus__content--image img {
     width: 585px;
     border: solid;
   }
 
-  .all_text_aboutUss_size {
+  .aboutus__content--text {
     width: 585px;
     border: solid;
 
@@ -29,26 +29,39 @@
     
   }
 
-  .green_text_icon_elements {
+  .aboutus__element--withgreen {
     display: flex;
     flex-direction: row;flex-wrap: wrap;
     gap: 20px;
     padding-right: 25px;
   }
 
-  .green_image_text_position {
+  .aboutus__greenelement--position {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
 
-  .imagen_green_elem {
+  .aboutus__greenelement--position span svg{
     width: 20px;
     color: #a9c623;
   }
 
+  .aboutus__greenelement--position p {
+    color: #707070;
+    line-height: 1.5;
+    letter-spacing: 0.05px;
+    font-size: 16px;
+    font-family: "AR One sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+}
 
-.pp_aboutUss_text {
+
+
+.aboutus__content--text h2 {
   font-size: 14px;
   font-family: "Istok Web", sans-serif;
   font-weight: 700;
@@ -57,7 +70,7 @@
   line-height: 1.3;  
 }
 
-.hh2_fresh_Produce {
+.aboutus__content--text h3 {
   font-size: 42px;
   font-family: "Istok Web", sans-serif;
   font-weight: 700;
@@ -66,7 +79,7 @@
   line-height: 1.2; 
 }
 
-.hh3_shopForGroceries {
+.aboutus__content--text p {
   font-size: 18px;
   font-family: "AR One sans", sans-serif;
   font-weight: 300;
@@ -75,7 +88,7 @@
   line-height: 1.56; 
 }
 
-.hh3_weWorkWith {
+.aboutus__content--text h4 {
   color: #707070;
         line-height: 1.5;
         letter-spacing: 0.05px;
@@ -88,18 +101,6 @@
 
 
 
-  .green_text_size {
-     
-        color: #707070;
-        line-height: 1.5;
-        letter-spacing: 0.05px;
-        font-size: 16px;
-        font-family: "AR One sans", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        text-decoration: none;
-        text-transform: none;
-  }
 
 
 
